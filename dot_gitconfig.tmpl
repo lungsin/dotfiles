@@ -1,0 +1,14 @@
+[user]
+	email = {{ .email }} 
+	name = {{ .name }} 
+	signingkey = {{ .chezmoi.homeDir }}/.ssh/id_rsa.pub
+[core]
+	editor = nvim
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = false
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
