@@ -1,7 +1,7 @@
 {{ if lookPath "brew" -}}
 #!/bin/sh
 
-brew install nvim tmux ripgrep
+brew install nvim tmux ripgrep git-delta xclip
 
 {{ if not (lookPath "rustup") -}}
 # Install rust
