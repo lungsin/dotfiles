@@ -1,7 +1,10 @@
 {{ if lookPath "brew" -}}
 #!/bin/sh
 
-brew install nvim tmux ripgrep git-delta xclip pueue
+brew install nvim tmux ripgrep git-delta xclip pueue fzf
+
+# Install fzf keybindings and fuzzy completion
+$(brew --prefix)/opt/fzf/install
 
 {{ if not (lookPath "rustup") -}}
 # Install rust
