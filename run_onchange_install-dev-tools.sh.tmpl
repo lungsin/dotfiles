@@ -6,6 +6,11 @@ brew install nvim tmux ripgrep git-delta xclip pueue fzf
 # Install fzf keybindings and fuzzy completion
 $(brew --prefix)/opt/fzf/install
 
+{{ if not (lookPath "bun") -}}
+# Install bun 
+curl -fsSL https://bun.sh/install | bash
+{{ end -}}
+
 {{ if not (lookPath "rustup") -}}
 # Install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
