@@ -1,5 +1,5 @@
 return {
-    "numToStr/FTerm.nvim",
+    'numToStr/FTerm.nvim',
     config = function()
         -- local fterm = require('FTerm')
         -- fterm.setup({})
