@@ -1,6 +1,6 @@
 return { -- Autoformat
   'stevearc/conform.nvim',
-    opts = {
+  opts = {
     notify_on_error = false,
     format_on_save = {
       timeout_ms = 500,
@@ -13,7 +13,7 @@ return { -- Autoformat
       --
       -- You can use a sub-list to tell conform to run *until* a formatter
       -- is found.
-      -- javascript = { { "prettierd", "prettier" } },
+      javascript = { { 'prettierd', 'prettier' } },
     },
   },
 }
