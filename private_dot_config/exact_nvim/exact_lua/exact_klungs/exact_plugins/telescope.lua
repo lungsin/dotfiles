@@ -2,7 +2,7 @@
 return {
   'nvim-telescope/telescope.nvim',
   event = 'VimEnter',
-  branch = '0.1.x',
+  -- branch = '0.1.x',
   dependencies = {
     'nvim-lua/plenary.nvim',
     { -- If encountering errors, see telescope-fzf-native README for install instructions
@@ -26,7 +26,7 @@ return {
     -- Browse the current buffer's undo tree in a text-based tree representation using telescope.
     'debugloop/telescope-undo.nvim',
   },
-  -- init = function() 
+  -- init = function()
   --   -- Autocommand to open telescope when entering nvim
   --   -- TODO: Organize this autocommand using the lazy.nvim config or in after/plugin folder.
   --   --
